@@ -44,7 +44,7 @@
 
     // Hint! This is where you should post messages to the web worker and
     // receive messages from the web worker.
-    worker.postMessage(type, imageData);
+    worker.postMessage({'type': type, 'imageData': imageData});
 
     worker.onmessage = function(e) {
         imageData = e.data.imageData;
