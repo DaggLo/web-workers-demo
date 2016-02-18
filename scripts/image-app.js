@@ -47,8 +47,8 @@
     worker.postMessage([type, imageData]);
 
     worker.onmessage = function(e) {
-        imageData = e.data;
-    }
+        imageData = e.data.imageData;
+    };
 
     /* length = imageData.data.length / 4;
     for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
