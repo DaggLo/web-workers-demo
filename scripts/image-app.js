@@ -47,7 +47,7 @@
     worker.postMessage({'type': type, 'imageData': imageData});
 
     worker.onmessage = function(e) {
-        imageData = e.data.imageData;
+        imageData = e.data;
         ctx.putImageData(imageData, 0, 0);
     };
 
