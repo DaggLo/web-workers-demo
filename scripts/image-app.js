@@ -48,6 +48,7 @@
 
     worker.onmessage = function(e) {
         imageData = e.data.imageData;
+        ctx.putImageData(imageData, 0, 0);
     };
 
     /* length = imageData.data.length / 4;
