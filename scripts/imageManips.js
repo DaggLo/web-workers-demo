@@ -2,7 +2,7 @@
 
 function manipulate(type, r, g, b, a) {
   
-  var func = function() {};
+  var func;
 
   function makePixelInverted(r, g, b, a) {
     r = 255 - r;
